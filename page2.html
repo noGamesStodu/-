@@ -11,13 +11,16 @@
             align-items: center;
             height: 100vh;
             margin: 0;
+            padding: 20px; /* Add padding to ensure elements are not too close to the edges */
             background-color: #f0f0f0;
+            box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
         }
         img {
-            max-width: 90%; 
-            max-height: 90%; 
+            max-width: 100%; /* Ensure the image scales down to fit the screen */
+            max-height: 100%; /* Ensure the image scales down to fit the screen */
             border: 2px solid #ccc;
             border-radius: 10px;
+            box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
         }
     </style>
 </head>
