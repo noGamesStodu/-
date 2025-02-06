@@ -2,41 +2,62 @@
 <html>
 <head>
     <title>قران كريم تفسير و قراءة</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateX(-20px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+
         body {
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
             color: #333;
             margin: 0;
-            padding: 0;
+            padding: 20px; /* Add padding to ensure elements are not too close to the edges */
             display: flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 80vh; 
+            align-items: center; /* Center align items */
+            justify-content: flex-start; /* Align items to the top */
+            min-height: 100vh; /* Ensure minimum height for better mobile view */
+            box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
         }
+
         h6, h5, p {
             font-size: 1.2em; 
             margin: 10px 0;
+            text-align: left; /* Align text to the left */
+            animation: slideIn 1s ease-in-out; /* Apply slideIn animation */
         }
+
         .button {
             display: inline-block;
             padding: 10px 20px;
             font-size: 1.2em;
             color: #fff;
-            background-color: #28a745; 
+            background-color: #28a745; /* Light green color */
             border: none;
             border-radius: 5px;
             text-decoration: none;
             text-align: center;
             cursor: pointer;
+            margin: 10px 0; /* Add margin for better spacing */
+            animation: fadeIn 1s ease-in-out; /* Apply fadeIn animation */
         }
+
         .button:hover {
-            background-color: #218838;
+            background-color: #218838; /* Darker green on hover */
         }
+
         hr {
             width: 80%;
             border: 1px solid #ccc;
+            animation: fadeIn 1s ease-in-out;
         }
     </style>
 </head>
